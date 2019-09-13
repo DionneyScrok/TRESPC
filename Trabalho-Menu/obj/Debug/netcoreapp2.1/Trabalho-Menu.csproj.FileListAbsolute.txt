@@ -1,0 +1,11 @@
+C:\Users\dionn\source\repos\Trabalho-Menu\Trabalho-Menu\bin\Debug\netcoreapp2.1\Trabalho-Menu.deps.json
+C:\Users\dionn\source\repos\Trabalho-Menu\Trabalho-Menu\bin\Debug\netcoreapp2.1\Trabalho-Menu.runtimeconfig.json
+C:\Users\dionn\source\repos\Trabalho-Menu\Trabalho-Menu\bin\Debug\netcoreapp2.1\Trabalho-Menu.runtimeconfig.dev.json
+C:\Users\dionn\source\repos\Trabalho-Menu\Trabalho-Menu\bin\Debug\netcoreapp2.1\Trabalho-Menu.dll
+C:\Users\dionn\source\repos\Trabalho-Menu\Trabalho-Menu\bin\Debug\netcoreapp2.1\Trabalho-Menu.pdb
+C:\Users\dionn\source\repos\Trabalho-Menu\Trabalho-Menu\obj\Debug\netcoreapp2.1\Trabalho-Menu.csprojAssemblyReference.cache
+C:\Users\dionn\source\repos\Trabalho-Menu\Trabalho-Menu\obj\Debug\netcoreapp2.1\Trabalho-Menu.csproj.CoreCompileInputs.cache
+C:\Users\dionn\source\repos\Trabalho-Menu\Trabalho-Menu\obj\Debug\netcoreapp2.1\Trabalho-Menu.AssemblyInfoInputs.cache
+C:\Users\dionn\source\repos\Trabalho-Menu\Trabalho-Menu\obj\Debug\netcoreapp2.1\Trabalho-Menu.AssemblyInfo.cs
+C:\Users\dionn\source\repos\Trabalho-Menu\Trabalho-Menu\obj\Debug\netcoreapp2.1\Trabalho-Menu.dll
+C:\Users\dionn\source\repos\Trabalho-Menu\Trabalho-Menu\obj\Debug\netcoreapp2.1\Trabalho-Menu.pdb
