@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 namespace Trabalho_Menu
 {
-    class Program
+    class Programu
     {
         static void Main(string[] args)
         {
@@ -39,18 +39,18 @@ namespace Trabalho_Menu
                             case "id":
                                 Console.WriteLine("Informe o ID:");
                                 string alterando = Console.ReadLine();
-                                Cadastro pesquisar = cadastros.Find(x => x.Id.Equals(alterando));
+                                Cadastro pesquisar = cadastros.Find(x => x._ID.Equals(alterando));
                                 if (alterando != null)
                                 {
-                                    Console.WriteLine($"ID: {pesquisar.Id}");
-                                    Console.WriteLine($"Nome: {pesquisar.Nome}");
-                                    Console.WriteLine($"Telefone: {pesquisar.Telefone}");
+                                    Console.WriteLine($"ID: {pesquisar._ID}");
+                                    Console.WriteLine($"Nome: {pesquisar._NOME}");
+                                    Console.WriteLine($"Telefone: {pesquisar._TELEFONE}");
                                     Console.WriteLine("Informe o novo id:");                                   
-                                    pesquisar.Id = Console.ReadLine();
+                                    pesquisar._ID = Console.ReadLine();
                                     Console.WriteLine("Informe o novo nome:");
-                                    pesquisar.Nome = Console.ReadLine();
+                                    pesquisar._NOME = Console.ReadLine();
                                     Console.WriteLine("Informe o novo telefone:");
-                                    pesquisar.Telefone = Console.ReadLine();
+                                    pesquisar._TELEFONE = Console.ReadLine();
                                     Console.WriteLine("Cadastro alterado com sucesso!");
                                     
                                 }
@@ -62,18 +62,18 @@ namespace Trabalho_Menu
                             case "nome":
                                 Console.WriteLine("Informe o Nome:");
                                 string alterando1 = Console.ReadLine();
-                                Cadastro pesquisar1 = cadastros.Find(x => x.Nome.Equals(alterando1));
+                                Cadastro pesquisar1 = cadastros.Find(x => x._NOME.Equals(alterando1));
                                 if (alterando1 != null)
                                 {
-                                    Console.WriteLine($"ID: {pesquisar1.Id}");
-                                    Console.WriteLine($"Nome: {pesquisar1.Nome}");
-                                    Console.WriteLine($"Telefone: {pesquisar1.Telefone}");
+                                    Console.WriteLine($"ID: {pesquisar1._ID}");
+                                    Console.WriteLine($"Nome: {pesquisar1._NOME}");
+                                    Console.WriteLine($"Telefone: {pesquisar1._TELEFONE}");
                                     Console.WriteLine("Informe o novo id:");
-                                    pesquisar1.Id = Console.ReadLine();
+                                    pesquisar1._ID = Console.ReadLine();
                                     Console.WriteLine("Informe o novo nome:");
-                                    pesquisar1.Nome = Console.ReadLine();
+                                    pesquisar1._NOME = Console.ReadLine();
                                     Console.WriteLine("Informe o novo telefone:");
-                                    pesquisar1.Telefone = Console.ReadLine();
+                                    pesquisar1._TELEFONE = Console.ReadLine();
                                     Console.WriteLine("Cadastro alterado com sucesso!");
 
                                 }
@@ -85,20 +85,20 @@ namespace Trabalho_Menu
                             case "telefone":
                                 Console.WriteLine("Informe o ID:");
                                 string alterando2 = Console.ReadLine();
-                                Cadastro pesquisar2 = cadastros.Find(x => x.Telefone.Equals(alterando2));
+                                Cadastro pesquisar2 = cadastros.Find(x => x._TELEFONE.Equals(alterando2));
 
                                 if (alterando2 != null)
                                 {
-                                    Console.WriteLine($"ID: {pesquisar2.Id}");
-                                    Console.WriteLine($"Nome: {pesquisar2.Nome}");
-                                    Console.WriteLine($"Telefone: {pesquisar2.Telefone}"); //COLOCAR PARA ALTERAR NAS CASES ID, TELEFONE E NOME;
+                                    Console.WriteLine($"ID: {pesquisar2._ID}");
+                                    Console.WriteLine($"Nome: {pesquisar2._NOME}");
+                                    Console.WriteLine($"Telefone: {pesquisar2._TELEFONE}"); //COLOCAR PARA ALTERAR NAS CASES ID, TELEFONE E NOME;
                                     Console.WriteLine("Deseja alterar (id = 1), (nome = 2) ou (telefone = 3)?");
                                     Console.WriteLine("Informe o novo id:");
-                                    pesquisar2.Id = Console.ReadLine();
+                                    pesquisar2._ID = Console.ReadLine();
                                     Console.WriteLine("Informe o novo nome:");
-                                    pesquisar2.Nome = Console.ReadLine();
+                                    pesquisar2._NOME = Console.ReadLine();
                                     Console.WriteLine("Informe o novo telefone:");
-                                    pesquisar2.Telefone = Console.ReadLine();
+                                    pesquisar2._TELEFONE = Console.ReadLine();
                                     Console.WriteLine("Cadastro alterado com sucesso!");
                                 }
                                 else
@@ -117,11 +117,11 @@ namespace Trabalho_Menu
                             case "id":
                                 Console.WriteLine("Informe o ID: ");
                                 string excID = Console.ReadLine();
-                                Cadastro excluID = cadastros.Find(x => x.Id.Equals(excID));
+                                Cadastro excluID = cadastros.Find(x => x._ID.Equals(excID));
                                 if (excID != null) { 
-                                Console.WriteLine($"ID: {excluID.Id}");
-                                Console.WriteLine($"Nome: {excluID.Nome}");
-                                Console.WriteLine($"Telefone: {excluID.Telefone}");
+                                Console.WriteLine($"ID: {excluID._ID}");
+                                Console.WriteLine($"Nome: {excluID._NOME}");
+                                Console.WriteLine($"Telefone: {excluID._TELEFONE}");
                                 Console.WriteLine("Deseja excluir este cadastro? Digite (s) para sim e (n) para não.");
                                 string yesORno = Console.ReadLine();
                                 switch (yesORno)
@@ -146,12 +146,12 @@ namespace Trabalho_Menu
                             case "nome":
                                 Console.WriteLine("Informe o NOME: ");
                                 string excNOME = Console.ReadLine();
-                                Cadastro excluNome = cadastros.Find(x => x.Id.Equals(excNOME));
+                                Cadastro excluNome = cadastros.Find(x => x._NOME.Equals(excNOME));
                                 if (excNOME != null)
                                 {
-                                    Console.WriteLine($"ID: {excluNome.Id}");
-                                    Console.WriteLine($"Nome: {excluNome.Nome}");
-                                    Console.WriteLine($"Telefone: {excluNome.Telefone}");
+                                    Console.WriteLine($"ID: {excluNome._ID}");
+                                    Console.WriteLine($"Nome: {excluNome._NOME}");
+                                    Console.WriteLine($"Telefone: {excluNome._TELEFONE}");
                                     Console.WriteLine("Deseja excluir este cadastro? Digite (s) para sim e (n) para não.");
                                     string yesORno = Console.ReadLine();
                                     switch (yesORno)
@@ -171,14 +171,14 @@ namespace Trabalho_Menu
                                 }
                                 break;
                             case "telefone":
-                                Console.WriteLine("Informe o ID: ");
+                                Console.WriteLine("Informe o telefone: ");
                                 string excTEL = Console.ReadLine();
-                                Cadastro excluTel = cadastros.Find(x => x.Id.Equals(excTEL));
+                                Cadastro excluTel = cadastros.Find(x => x._TELEFONE.Equals(excTEL));
                                 if (excTEL != null)
                                 {
-                                    Console.WriteLine($"ID: {excluTel.Id}");
-                                    Console.WriteLine($"Nome: {excluTel.Nome}");
-                                    Console.WriteLine($"Telefone: {excluTel.Telefone}");
+                                    Console.WriteLine($"ID: {excluTel._ID}");
+                                    Console.WriteLine($"Nome: {excluTel._NOME}");
+                                    Console.WriteLine($"Telefone: {excluTel._TELEFONE}");
                                     Console.WriteLine("Deseja excluir este cadastro? Digite (s) para sim e (n) para não.");
                                     string yesORno = Console.ReadLine();
                                     switch (yesORno)
@@ -206,9 +206,9 @@ namespace Trabalho_Menu
                         Console.WriteLine("(LISTAR)");
                         foreach(Cadastro listar in cadastros)
                         {
-                            Console.WriteLine($"ID: {listar.Id}");
-                            Console.WriteLine($"Nome: {listar.Nome}");
-                            Console.WriteLine($"Telefone: {listar.Telefone}");
+                            Console.WriteLine($"ID: {listar._ID}");
+                            Console.WriteLine($"Nome: {listar._NOME}");
+                            Console.WriteLine($"Telefone: {listar._TELEFONE}");
                             Console.WriteLine("====================");
                         }
                         break;
@@ -221,26 +221,26 @@ namespace Trabalho_Menu
                             case "id":
                                 Console.WriteLine("Digite o id: ");
                                 string pesqID = Console.ReadLine();
-                                Cadastro pesquiseID = cadastros.Find(x => x.Id.Equals(pesqID));
-                                Console.WriteLine($"ID: {pesquiseID.Id}");
-                                Console.WriteLine($"Nome: {pesquiseID.Nome}");
-                                Console.WriteLine($"Telefone: {pesquiseID.Telefone}");
+                                Cadastro pesquiseID = cadastros.Find(x => x._ID.Equals(pesqID));
+                                Console.WriteLine($"ID: {pesquiseID._ID}");
+                                Console.WriteLine($"Nome: {pesquiseID._NOME}");
+                                Console.WriteLine($"Telefone: {pesquiseID._TELEFONE}");
                                 break;
                             case "nome":
                                 Console.WriteLine("Digite o nome: ");
                                 string pesqNome = Console.ReadLine();
-                                Cadastro pesquiseNome = cadastros.Find(x => x.Id.Equals(pesqNome));
-                                Console.WriteLine($"ID: {pesquiseNome.Id}");
-                                Console.WriteLine($"Nome: {pesquiseNome.Nome}");
-                                Console.WriteLine($"Telefone: {pesquiseNome.Telefone}");
+                                Cadastro pesquiseNome = cadastros.Find(x => x._NOME.Equals(pesqNome));
+                                Console.WriteLine($"ID: {pesquiseNome._ID}");
+                                Console.WriteLine($"Nome: {pesquiseNome._NOME}");
+                                Console.WriteLine($"Telefone: {pesquiseNome._TELEFONE}");
                                 break;
                             case "telefone":
                                 Console.WriteLine("Digite o telefone: ");
                                 string pesqTEL = Console.ReadLine();
-                                Cadastro pesquiseTel = cadastros.Find(x => x.Id.Equals(pesqTEL));
-                                Console.WriteLine($"ID: {pesquiseTel.Id}");
-                                Console.WriteLine($"Nome: {pesquiseTel.Nome}");
-                                Console.WriteLine($"Telefone: {pesquiseTel.Telefone}");
+                                Cadastro pesquiseTel = cadastros.Find(x => x._TELEFONE.Equals(pesqTEL));
+                                Console.WriteLine($"ID: {pesquiseTel._ID}");
+                                Console.WriteLine($"Nome: {pesquiseTel._NOME}");
+                                Console.WriteLine($"Telefone: {pesquiseTel._TELEFONE}");
                                 break;
                             default:
                                 Console.WriteLine("Opção Invalida");
