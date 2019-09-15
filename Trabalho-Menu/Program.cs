@@ -83,7 +83,7 @@ namespace Trabalho_Menu
                                 }
                                 break;
                             case "telefone":
-                                Console.WriteLine("Informe o ID:");
+                                Console.WriteLine("Informe o telefone:");
                                 string alterando2 = Console.ReadLine();
                                 Cadastro pesquisar2 = cadastros.Find(x => x._TELEFONE.Equals(alterando2));
 
@@ -92,7 +92,6 @@ namespace Trabalho_Menu
                                     Console.WriteLine($"ID: {pesquisar2._ID}");
                                     Console.WriteLine($"Nome: {pesquisar2._NOME}");
                                     Console.WriteLine($"Telefone: {pesquisar2._TELEFONE}"); //COLOCAR PARA ALTERAR NAS CASES ID, TELEFONE E NOME;
-                                    Console.WriteLine("Deseja alterar (id = 1), (nome = 2) ou (telefone = 3)?");
                                     Console.WriteLine("Informe o novo id:");
                                     pesquisar2._ID = Console.ReadLine();
                                     Console.WriteLine("Informe o novo nome:");
